@@ -32,8 +32,18 @@ function addBookToLibrary() {
 }
 
 button.addEventListener("click", () => {
-    form.classList.toggle("book_wrapper");
+    // form.classList.toggle("book_wrapper");
+    toggleForm()
 
     addBookArray(input1.value, "jk")
 })
 // form.classList.remove("book_wrapper")
+
+function toggleForm() {
+    if (form.style.display == "none") {
+        form.style.display = "block";
+    } else {
+        form.style.display = "none";
+    }
+}
+form.style.display = "none"
