@@ -1,0 +1,35 @@
+.wrapper {
+    overflow: scroll;
+    display: grid;
+    grid-template-rows: 3rem auto 10rem;
+    border: 1px solid red;
+    height: 100%;
+}
+
+.hero {
+    /* height: 4rem; */
+    border: 1px solid green;
+
+}
+
+
+.main {
+    /* height: 50rem; */
+    border: 1px solid black;
+}
+
+.box {
+    /* height: 10rem; */
+    border: 1px solid red;
+}
+
+.btn_container {
+    border: 1px solid rgb(38, 0, 128);
+
+}
+
+.align {
+    -ms-flex-item-align: center;
+    align-self: center;
+    justify-self: center;
+}
