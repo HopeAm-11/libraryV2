@@ -1,6 +1,7 @@
 let main = document.querySelector("#main_wrapper");
+let form = document.querySelector("#user_form")
 let button = document.querySelector("#add_btn");
-
+let input1 = document.querySelector("#test")
 let myLibrary = []; // stores book objects.
 
 function Book(author, title) {
@@ -29,3 +30,10 @@ function addBookToLibrary() {
     // The outer forEach() loop is used to iterate through the objects array.
     //  We then use the for...in loop to iterate through the properties of an individual object.
 }
+
+button.addEventListener("click", () => {
+    form.classList.toggle("book_wrapper");
+
+    addBookArray(input1.value, "jk")
+})
+// form.classList.remove("book_wrapper")
