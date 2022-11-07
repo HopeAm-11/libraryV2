@@ -5,6 +5,7 @@
     /* border: 1px solid red; */
     height: 100%;
     background-color: #eee;
+
 }
 
 .hero {
@@ -18,19 +19,15 @@
     color: #eee;
 }
 
+.heading {
+    border-bottom: 1px solid white;
+}
+
 .main {
     /* height: 50rem; */
     /* border: 1px solid black; */
 }
 
-/* .box {
-    /* height: 10rem; */
-border: 1px solid red;
-
-*/ .btn_container {
-    /* border: 1px solid rgb(38, 0, 128); */
-    /*   */
-}
 
 .btn_add {
     /* width: 8rem; */
@@ -43,10 +40,15 @@ border: 1px solid red;
     padding: 10px;
     background-color: #71C9CE;
     cursor: pointer;
+
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
 }
 
 .btn_add:hover {
     background-color: #00ADB5;
+
 }
 
 .align {
@@ -63,4 +65,11 @@ border: 1px solid red;
     -ms-flex-pack: center;
     justify-content: center;
 }
+
+.book_wrapper {
+
+    left: 30px;
+    width: 50rem;
+    height: 40rem;
+    border: 1px solid red;
 }
