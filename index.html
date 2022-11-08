@@ -15,10 +15,26 @@
         <header class="hero align">
             <h1 class="heading">Library</h1>
         </header>
-        <article class="book_wrapper" id="user_form">
-            <p>Title:</p>
-            <input type="text" id="test">
-        </article>
+        <form action="#" class="form book_wrapper" id="user_form">
+            <fieldset>
+                <div class="form_wrapper">
+                    <legend class="ftitle"> <span>New Book</span></legend>
+                    <div>
+                        <label for="author">author</label>
+                        <input type="text" id="author" name="author">
+                    </div>
+                    <div>
+                        <label for="title">title</label>
+                        <input type="text" id="title" name="title">
+                        <div>
+                            <label for="pagenum">number of pages</label>
+                            <input type="number" id="pagenum" name="pagenum">
+                        </div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </div>
+            </fieldset>
+        </form>
         <main class="main" id="main_wrapper">
 
         </main>

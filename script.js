@@ -1,3 +1,4 @@
+let parent = document.querySelector(".wrapper")
 let main = document.querySelector("#main_wrapper");
 let form = document.querySelector("#user_form")
 let button = document.querySelector("#add_btn");
@@ -42,8 +43,12 @@ button.addEventListener("click", () => {
 function toggleForm() {
     if (form.style.display == "none") {
         form.style.display = "block";
+        parent.classList.add("dark")
     } else {
         form.style.display = "none";
+        parent.classList.remove("dark")
+
     }
 }
 form.style.display = "none"
+parent.classList.remove("dark")
