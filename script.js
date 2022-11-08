@@ -62,8 +62,10 @@ parent.classList.remove("dark")
 sub_btn.addEventListener('click', test)
 
 
-function test() {
+function test(event) {
     addBookArray(author.value, title.value, pagenum.value)
     addBookToLibrary()
+    event.preventDefault();
+    toggleForm()
 
 }
