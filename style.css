@@ -103,12 +103,55 @@ fieldset {
     justify-content: center;
     padding: 2rem;
     grid-template-columns: 1fr 1fr;
+    gap: 5px;
 }
 
 .form_wrapper>* {
-    border: 1px solid rgb(25, 0, 255);
+    text-transform: capitalize;
+}
 
+.ftitle {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    align-self: center;
 
+}
+
+.form_items {
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: start;
+    display: grid;
+}
+
+.btn {
+
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    align-self: center;
+}
+
+input[type="number"] {
+    width: 50%;
+}
+
+.btn_form {
+    width: 8rem;
+    padding: 16px 32px;
+    cursor: pointer;
+
+}
+
+.page {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    width: 100%;
 }
 
 /* .dark:after {

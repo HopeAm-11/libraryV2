@@ -2,7 +2,8 @@ let parent = document.querySelector(".wrapper")
 let main = document.querySelector("#main_wrapper");
 let form = document.querySelector("#user_form")
 let button = document.querySelector("#add_btn");
-let input1 = document.querySelector("#test")
+let sub_btn = document.querySelector("#submit")
+let author = document.querySelector("#author")
 let myLibrary = []; // stores book objects.
 
 function Book(author, title) {
@@ -35,8 +36,6 @@ function addBookToLibrary() {
 button.addEventListener("click", () => {
     // form.classList.toggle("book_wrapper");
     toggleForm()
-
-    addBookArray(input1.value, "jk")
 })
 // form.classList.remove("book_wrapper")
 
@@ -52,3 +51,14 @@ function toggleForm() {
 }
 form.style.display = "none"
 parent.classList.remove("dark")
+
+
+// addBookArray(input1.value, "jk")
+
+sub_btn.addEventListener('click', test)
+
+
+function test() {
+    addBookArray(author.value, "jk")
+    addBookToLibrary()
+}
