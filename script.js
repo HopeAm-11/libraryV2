@@ -7,6 +7,8 @@ let author = document.querySelector("#author")
 let title = document.querySelector("#title")
 let page = document.querySelector("#pagenum")
 let myLibrary = []; // stores book objects.
+// let card = document.createElement('div');
+
 
 function Book(author, title, page) {
     this.author = author;
@@ -27,9 +29,13 @@ function addBookArray(author, title, page) {
 
 function addBookToLibrary() {
     myLibrary.forEach(books => {
-        for (let key in books) {
-            console.log(`${key}: ${books[key]}`)
-        }
+
+        // console.log(`${key}: ${books[key]}`);
+        let card = document.createElement('div');
+        card.innerHTML = ` ${key}: ${books[key]}`;
+        main.appendChild(card);
+
+
     });
     // do stuff here loop through objects array and display them on main page
 
