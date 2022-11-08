@@ -4,22 +4,26 @@ let form = document.querySelector("#user_form")
 let button = document.querySelector("#add_btn");
 let sub_btn = document.querySelector("#submit")
 let author = document.querySelector("#author")
+let title = document.querySelector("#title")
+let page = document.querySelector("#pagenum")
 let myLibrary = []; // stores book objects.
 
-function Book(author, title) {
-    this.title = title
-    this.author = author
+function Book(author, title, page) {
+    this.author = author;
+    this.title = title;
+    this.page = page;
+
     // the constructor... builds objects 
 }
 
-let book1 = new Book('harry', 'jk')
+// let book1 = new Book('harry', 'jk')
 
-function addBookArray(a, b) {
-    let book = new Book(a, b)
-    myLibrary.push(book)
+function addBookArray(author, title, page) {
+    let book = new Book(author, title, page);
+    myLibrary.push(book);
 }
-addBookArray("harry", "jk")
-addBookArray("wow", "it works")
+// addBookArray("harry", "jk")
+// addBookArray("wow", "it works")
 
 function addBookToLibrary() {
     myLibrary.forEach(books => {
@@ -59,6 +63,7 @@ sub_btn.addEventListener('click', test)
 
 
 function test() {
-    addBookArray(author.value, "jk")
+    addBookArray(author.value, title.value, pagenum.value)
     addBookToLibrary()
+
 }
