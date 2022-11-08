@@ -65,7 +65,13 @@ sub_btn.addEventListener('click', test)
 function test(event) {
     addBookArray(author.value, title.value, pagenum.value)
     addBookToLibrary()
-    event.preventDefault();
     toggleForm()
+    removeInputValue()
+    event.preventDefault();
+}
 
+function removeInputValue() {
+    author.value = "";
+    title.value = "";
+    page.value = "";
 }
